@@ -24,4 +24,8 @@ class Movie
         $this->year = $year;
         $this->duration = $duration;
     }
+    public function get_id()
+    {
+        return $this->id;
+    }
 }
