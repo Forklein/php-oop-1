@@ -28,4 +28,12 @@ class Movie
     {
         return $this->id;
     }
+    public function get_difference()
+    {
+        $date = date("Y-m-d");
+        $date_arr = explode("-", $date);
+        $yr = $date_arr[0];
+        $diff = $yr - $this->year;
+        return "Questo film è uscito $diff anni fà";
+    }
 }

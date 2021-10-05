@@ -22,6 +22,7 @@ require_once __DIR__ . '/models/Movie.php'
         <p>Anno: <?= $movie_1->year ?></p>
         <p>Durata: <?= $movie_1->duration ?></p>
         <caption>ID: <?= $movie_1->get_id() ?></caption>
+        <p class="font-italic"><?= $movie_1->get_difference() ?></p>
     </div>
     <hr />
     <?php $movie_2 = new Movie(2, 'Una settimana da Dio', 'Commedia', 2003, '102 minuti') ?>
@@ -31,6 +32,7 @@ require_once __DIR__ . '/models/Movie.php'
         <p>Anno: <?= $movie_2->year ?></p>
         <p>Durata: <?= $movie_2->duration ?></p>
         <caption>ID: <?= $movie_2->get_id() ?></caption>
+        <p class="font-italic"><?= $movie_2->get_difference() ?></p>
     </div>
     <hr />
 
